@@ -1,0 +1,15 @@
+<div style="" class="py-16 px-10 flex flex-col justify-center items-center space-y-10 items-center bg-hlBlue">
+  <div class="space-y-8">
+    <h1 class="text-center text-hlGreen font-black xl:text-40 text-2xl max-w-full">DESAFIOS PROPOSTOS</h1>    
+  </div>
+  <div class="grid grid-cols-1 xl:grid-cols-4 gap-x-6 gap-y-6">
+    <div *ngFor="let evento of cronograma" class="item">
+      <app-cronograma-item [evento]="evento"></app-cronograma-item>
+
+    </div>
+  </div>
+
+
+</div>
+
+
