@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "hlGreen": "#42C0B6",
         "hlBlue": "#003262",
+        "hlBlack": "#212529"
       },
       height:{
         "732": "732px",

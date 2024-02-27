@@ -6,9 +6,10 @@ import { HeaderModule } from '../../components/header/header.module';
 import { DesafiosSegmentoModule } from '../../components/desafios-segmento/desafios-segmento.module';
 import { SegmentoIncialModule } from '../../components/segmento-incial/segmento-incial.module';
 import { SegmentoCronogramaModule } from '../../components/segmento-cronograma/segmento-cronograma.module';
+import { SegmentoPremiacaoModule } from '../../components/segmento-premiacao/segmento-premiacao.module';
 
 @NgModule({
-  imports: [CommonModule, HeaderModule, DesafiosSegmentoModule, SegmentoIncialModule, SegmentoCronogramaModule],
+  imports: [CommonModule, HeaderModule, DesafiosSegmentoModule, SegmentoIncialModule, SegmentoCronogramaModule, SegmentoPremiacaoModule],
   declarations: [HomeComponent],
   exports: [HomeComponent],
 })
