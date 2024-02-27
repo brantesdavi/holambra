@@ -1,4 +1,4 @@
-<div style="" class="py-16 flex flex-col space-y-10 items-center bg-white">
+<div style="" class="py-16 flex flex-col justify-center items-center space-y-10 items-center bg-white">
   <div class="space-y-8">
     <h1 class="text-center text-hlBlue text-5xl font-black">DESAFIOS PROPOSTOS</h1>
     <div style="width: 1110px;" class="text text-hlBlue font-semibold">
@@ -11,7 +11,7 @@
       </span>
     </div>
   </div>
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr);" class="gap-x-6 gap-y-12">
+  <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-12">
     <div *ngFor="let desafio of desafios" class="item">
       <app-desafio-item [desafio]="desafio"></app-desafio-item>
 
