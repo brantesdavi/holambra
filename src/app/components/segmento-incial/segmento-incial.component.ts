@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './segmento-incial.component.html',
   styleUrls: ['./segmento-inicial.component.sass']
 })
-export class SegmentoIncialComponent {}
+export class SegmentoIncialComponent {
+  scrollToInscricao() {
+    document.getElementById('inscricao')?.scrollIntoView();
+  }
+}

@@ -1,5 +1,5 @@
 <div class="py-16 flex flex-col justify-center items-center space-y-10 items-center bg-white">
-  <h1 class="text-center text-hlBlue font-black xl:text-40 text-2xl max-w-full">FAÇA SUA INSCRIÇÃO</h1>
+  <h1 class="text-center text-hlBlue font-black xl:text-32 text-2xl max-w-full">FAÇA SUA INSCRIÇÃO</h1>
 
   <form [formGroup]="formulario" class="space-y-4" (ngSubmit)="onSubmit()">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -7,7 +7,7 @@
         <input class="border p-4 w-full"
          type="text" id="nome" formControlName="nome" placeholder="Nome" required>
         <div *ngIf="formulario?.get('nome')?.invalid && formulario?.get('nome')?.touched">
-          <p class="error">Nome inválido</p>
+          <p class="error">Por favor coloque o seu nome</p>
         </div>
       </div>
   
@@ -15,7 +15,7 @@
         <input class="border p-4 w-full"
          type="text" id="sobrenome" formControlName="sobrenome" placeholder="sobrenome" required>
         <div *ngIf="formulario?.get('sobrenome')?.invalid && formulario?.get('sobrenome')?.touched">
-          <p class="error">Sobrenome inválido</p>
+          <p class="error">Por favor coloque sobrenome</p>
         </div>
       </div>
   
@@ -23,7 +23,7 @@
         <input class="border p-4 w-full"
          type="text" id="email" formControlName="email" placeholder="email" required>
         <div *ngIf="formulario?.get('email')?.invalid && formulario?.get('email')?.touched">
-          <p class="error">Email inválido</p>
+          <p class="error">Por favor coloque o seu email</p>
         </div>
       </div>
   
@@ -31,7 +31,7 @@
         <input class="border p-4 w-full"
          type="text" id="telefone" formControlName="telefone" placeholder="telefone" required>
         <div *ngIf="formulario?.get('telefone')?.invalid && formulario?.get('telefone')?.touched">
-          <p class="error">Telefone inválido</p>
+          <p class="error">Por favor coloque o seu telefone</p>
         </div>
       </div>
     </div>
@@ -41,30 +41,71 @@
         <input class="border p-4 w-full"
          type="text" id="cep" formControlName="cep" placeholder="cep" required>
         <div *ngIf="formulario?.get('cep')?.invalid && formulario?.get('cep')?.touched">
-          <p class="error">CEP inválido</p>
+          <p class="error">Por favor coloque o seu cep</p>
         </div>
       </div>
       <div style="width: 297px;">      
         <input class="border p-4 w-full"
          type="text" id="endereco" formControlName="endereco" placeholder="endereco" required>
         <div *ngIf="formulario?.get('endereco')?.invalid && formulario?.get('endereco')?.touched">
-          <p class="error">Endereço inválido</p>
+          <p class="error">Por favor coloque o seu endereco</p>
         </div>
       </div>
       <div style="width: 297px;">      
         <input class="border p-4 w-full"
          type="text" id="bairro" formControlName="bairro" placeholder="bairro" required>
         <div *ngIf="formulario?.get('bairro')?.invalid && formulario?.get('bairro')?.touched">
-          <p class="error">Bairro inválido</p>
+          <p class="error">Por favor coloque o seu bairro</p>
         </div>
       </div>
       <div style="width: 297px;">      
+        <input class="border p-4 w-full"type="text" id="complemento" formControlName="complemento" placeholder="complemento" required>
+      </div>
+
+      <div style="width: 297px;">
+        <select class="border p-4 w-full" id="estado" formControlName="estado">
+          <option value="">Selecione um estado...</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>        
+      </div>      
+      <div *ngIf="formulario?.get('estado')?.invalid && formulario?.get('estado')?.touched">
+        <p class="error">Por favor, selecione um estado.</p>
+      </div>
+
+      <div style="width: 297px;">      
         <input class="border p-4 w-full"
-         type="text" id="complemento" formControlName="complemento" placeholder="complemento" required>
-        <div *ngIf="formulario?.get('complemento')?.invalid && formulario?.get('complemento')?.touched">
-          <p class="error">Complemento inválido</p>
+         type="text" id="cidade" formControlName="cidade" placeholder="cidade" required>
+        <div *ngIf="formulario?.get('cidade')?.invalid && formulario?.get('cidade')?.touched">
+          <p class="error">Por favor coloque a sua cidade</p>
         </div>
       </div>
+
       <button type="submit" class="w-full py-5 xl:py-4 xl:px-8 bg-hlGreen font-semibold text-white text-xs xl:text-xl">ENVIAR</button>
     </div>
 

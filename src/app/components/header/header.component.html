@@ -1,15 +1,16 @@
-<header style="height: 70px;" class="grid grid-cols-2">
-  <div class="w-full h-full flex items-center px-310">
-    <img src='../../../assets/logo_holambra_telescope.svg' routerLink="/" class="text-white font-bold text-xl">
+<header class="py-2 lg:py-0 bg-hlBlue lg:bg-transparent w-full flex flex-col lg:flex-row items-center lg:grid lg:grid-cols-2">
+  <div class="w-full h-full flex items-center justify-start px-60 lg:pl-405">
+    <img src='../../../assets/logo_holambra_telescope.svg' 
+    routerLink="/" class="h-50 lg:h-full">
   </div>
   
-  <div class="h-full w-full flex items-center justify-start pr-4 px-10">
-    <nav class="hidden lg:flex flex-row items-center text-sm font-medium text-white space-x-4">
-      <a class="hover:text-gray-900" href="#">INSCREVA-SE</a>
-      <a class="hover:text-gray-900" href="#">DESAFIOS</a>
-      <a class="hover:text-gray-900" href="#">CRONOGRAMA</a>
-      <a class="hover:text-gray-900" href="#">PREMIAÇÃO</a>
-      <a class="hover:text-gray-900" href="#">REGULAMENTO</a>
+  <div class="h-full w-full lg:flex items-center lg:items-center justify-start pr-4 px-60" id="nav-container">
+    <nav class="flex flex-col lg:flex-row items-start text-10 lg:text-sm font-medium text-white lg:space-x-4">
+      <a class="hover:text-gray-900 py-1.5 cursor-pointer" (click)="scrollTo('inscricao')">INSCREVA-SE</a>
+      <a class="hover:text-gray-900 py-1.5 cursor-pointer" (click)="scrollTo('desafios')">DESAFIOS</a>
+      <a class="hover:text-gray-900 py-1.5 cursor-pointer" (click)="scrollTo('cronograma')">CRONOGRAMA</a>
+      <a class="hover:text-gray-900 py-1.5 cursor-pointer" (click)="scrollTo('premiacao')">PREMIAÇÃO</a>
+      <a class="hover:text-gray-900 py-1.5 cursor-pointer" (click)="scrollTo('ergulamento')">REGULAMENTO</a>
     </nav>
   </div>
 </header>

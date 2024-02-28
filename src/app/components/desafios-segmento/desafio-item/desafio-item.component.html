@@ -1,13 +1,13 @@
-<div class="space-y-3 px-10 lg:w-540">
+<div class="space-y-3  w-full">
   <div class="flex items-center space-x-2">
-    <div class="w-40 lg:w-90">
+    <div class="">
       <div class="bg-hlBlue rounded-full h-40 w-40 lg:h-90 lg:w-90 flex justify-center items-center">
         <img  src="../../../../assets/{{desafio.icon}}">
       </div>
     </div>
     <span class="lg:text-2xl font-bold text-hlBlue">{{desafio.title}}</span>
   </div>
-  <div class="font-medium flex flex-col" *ngFor="let text of desafio.textList">
+  <div class="font-medium flex flex-col w-full" *ngFor="let text of desafio.textList">
     <span class="text-xs lg:text-base">{{text}}</span>
   </div>
 </div>

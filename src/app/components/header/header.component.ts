@@ -4,4 +4,16 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   templateUrl: './header.component.html',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+
+  isVisible = false;
+
+  toggleNavigation() {
+    this.isVisible = !this.isVisible;
+    document.getElementById('nav-container')?.classList.toggle('hidden');
+  }
+
+  scrollTo(url: string) {
+    document.getElementById(url)?.scrollIntoView();
+  }
+}

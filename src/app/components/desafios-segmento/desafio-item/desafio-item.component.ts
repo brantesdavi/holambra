@@ -5,10 +5,8 @@ import { Desafio } from '../../../models/desafio.models';
   selector: 'app-desafio-item',
   templateUrl: './desafio-item.component.html',
 })
-export class DesafioItemComponent implements OnInit{
-  ngOnInit(): void {
-    console.log(this.desafio.icon)
-  }
+export class DesafioItemComponent{
+  
   
   @Input()
   desafio: Desafio = {
