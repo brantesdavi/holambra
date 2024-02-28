@@ -1,0 +1,76 @@
+<div class="py-16 flex flex-col justify-center items-center space-y-10 items-center bg-white">
+  <h1 class="text-center text-hlBlue font-black xl:text-40 text-2xl max-w-full">FAÇA SUA INSCRIÇÃO</h1>
+
+  <form [formGroup]="formulario" class="space-y-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="nome" formControlName="nome" placeholder="Nome" required>
+        <div *ngIf="formulario?.get('nome')?.invalid && formulario?.get('nome')?.touched">
+          <p class="erro">Nome inválido</p>
+        </div>
+      </div>
+  
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="sobrenome" formControlName="sobrenome" placeholder="sobrenome" required>
+        <div *ngIf="formulario?.get('sobrenome')?.invalid && formulario?.get('sobrenome')?.touched">
+          <p class="erro">Sobrenome inválido</p>
+        </div>
+      </div>
+  
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="email" formControlName="email" placeholder="email" required>
+        <div *ngIf="formulario?.get('email')?.invalid && formulario?.get('email')?.touched">
+          <p class="erro">Email inválido</p>
+        </div>
+      </div>
+  
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="telefone" formControlName="telefone" placeholder="telefone" required>
+        <div *ngIf="formulario?.get('telefone')?.invalid && formulario?.get('telefone')?.touched">
+          <p class="erro">Telefone inválido</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="cep" formControlName="cep" placeholder="cep" required>
+        <div *ngIf="formulario?.get('cep')?.invalid && formulario?.get('cep')?.touched">
+          <p class="erro">CEP inválido</p>
+        </div>
+      </div>
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="endereco" formControlName="endereco" placeholder="endereco" required>
+        <div *ngIf="formulario?.get('endereco')?.invalid && formulario?.get('endereco')?.touched">
+          <p class="erro">Endereço inválido</p>
+        </div>
+      </div>
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="bairro" formControlName="bairro" placeholder="bairro" required>
+        <div *ngIf="formulario?.get('bairro')?.invalid && formulario?.get('bairro')?.touched">
+          <p class="erro">Bairro inválido</p>
+        </div>
+      </div>
+      <div style="width: 297px;">      
+        <input class="border p-4 w-full"
+         type="text" id="complemento" formControlName="complemento" placeholder="complemento" required>
+        <div *ngIf="formulario?.get('complemento')?.invalid && formulario?.get('complemento')?.touched">
+          <p class="erro">Complemento inválido</p>
+        </div>
+      </div>
+      <button class="w-full py-5 xl:py-4 xl:px-8 bg-hlGreen font-semibold text-white text-xs xl:text-xl">ENVIAR</button>
+    </div>
+
+    
+  </form>
+
+</div>
+
+

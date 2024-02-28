@@ -7,9 +7,12 @@ import { DesafiosSegmentoModule } from '../../components/desafios-segmento/desaf
 import { SegmentoIncialModule } from '../../components/segmento-incial/segmento-incial.module';
 import { SegmentoCronogramaModule } from '../../components/segmento-cronograma/segmento-cronograma.module';
 import { SegmentoPremiacaoModule } from '../../components/segmento-premiacao/segmento-premiacao.module';
+import { SegmentoInscricaoModule } from '../../components/segmento-inscricao/segmento-inscricao.module';
+import { FooterModule } from '../../components/footer/footer.module';
+import { CepService } from '../../services/cep.service';
 
 @NgModule({
-  imports: [CommonModule, HeaderModule, DesafiosSegmentoModule, SegmentoIncialModule, SegmentoCronogramaModule, SegmentoPremiacaoModule],
+  imports: [CommonModule, HeaderModule, DesafiosSegmentoModule, SegmentoIncialModule, SegmentoCronogramaModule, SegmentoPremiacaoModule, FooterModule, SegmentoInscricaoModule],
   declarations: [HomeComponent],
   exports: [HomeComponent],
 })
