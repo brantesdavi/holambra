@@ -9,5 +9,6 @@ import { HttpClientJsonpModule } from '@angular/common/http';
   imports: [CommonModule, ReactiveFormsModule, HttpClientJsonpModule],
   declarations: [SegmentoInscricaoComponent],
   exports: [SegmentoInscricaoComponent],  
+
 })
 export class SegmentoInscricaoModule {}

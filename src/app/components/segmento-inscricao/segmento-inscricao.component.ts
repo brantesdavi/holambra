@@ -4,7 +4,8 @@ import { CepService } from '../../services/cep.service';
 
 @Component({
   selector: 'app-segmento-inscricao',
-  templateUrl: './segmento-inscricao.component.html',
+  templateUrl: './segmento-inscricao.component.html',  
+  styleUrls: ['./segmento-inscricao.component.sass']
 })
 
 export class SegmentoInscricaoComponent  implements OnInit{
@@ -49,15 +50,17 @@ export class SegmentoInscricaoComponent  implements OnInit{
     this.cepService.buscarEndereco(cep).subscribe(
       e => console.log(e)
     )
-  }
-
-  
+  }  
 
   
 
   onSubmit() {
     if (this.formulario.valid) {
       console.log("Inscrição OK");
+    }
+    else{
+      console.log("alguma coisa invalida");
+
     }
   }
 }
