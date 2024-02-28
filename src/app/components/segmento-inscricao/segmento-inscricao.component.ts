@@ -59,9 +59,11 @@ export class SegmentoInscricaoComponent  implements OnInit{
   }
 
   onSubmit() {
-    const regex = /^[0-9]{11}$/;
     if (this.formulario.valid) {
-      alert(this.formulario.value);
+      alert("Formulario enviado");
+    }
+    else{
+      alert("Existem erros no formulario");
     }
   }
 }
